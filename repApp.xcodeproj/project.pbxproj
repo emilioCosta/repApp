@@ -15,6 +15,7 @@
 		BCCD341926400ECC00C4BD18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCD341726400ECC00C4BD18 /* LaunchScreen.storyboard */; };
 		BCCD342426400ECC00C4BD18 /* repAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD342326400ECC00C4BD18 /* repAppTests.swift */; };
 		BCCD342F26400ECC00C4BD18 /* repAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD342E26400ECC00C4BD18 /* repAppUITests.swift */; };
+		BCCD3443264017F000C4BD18 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCD3442264017F000C4BD18 /* logo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BCCD342A26400ECC00C4BD18 /* repAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = repAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCD342E26400ECC00C4BD18 /* repAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repAppUITests.swift; sourceTree = "<group>"; };
 		BCCD343026400ECC00C4BD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCD3442264017F000C4BD18 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo1.png; path = ../../../Downloads/logo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				BCCD341026400ECB00C4BD18 /* ViewController.swift */,
 				BCCD341226400ECB00C4BD18 /* Main.storyboard */,
 				BCCD341526400ECC00C4BD18 /* Assets.xcassets */,
+				BCCD3442264017F000C4BD18 /* logo1.png */,
 				BCCD341726400ECC00C4BD18 /* LaunchScreen.storyboard */,
 				BCCD341A26400ECC00C4BD18 /* Info.plist */,
 			);
@@ -233,6 +236,7 @@
 			files = (
 				BCCD341926400ECC00C4BD18 /* LaunchScreen.storyboard in Resources */,
 				BCCD341626400ECC00C4BD18 /* Assets.xcassets in Resources */,
+				BCCD3443264017F000C4BD18 /* logo1.png in Resources */,
 				BCCD341426400ECB00C4BD18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
