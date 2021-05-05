@@ -9,14 +9,40 @@ import SwiftUI
 
 struct PartyDetailsView: View {
     var body: some View {
-        VStack(alignment: .center) {
-            Image("party")
-                .resizable()
-                .frame(height: 250)
-            VStack {
-                Header()
+        ScrollView {
+            ZStack {
+                Color(.sRGB, red: 247, green: 247, blue: 247, opacity: 1).ignoresSafeArea()
+                VStack(alignment: .center) {
+                    Image("party")
+                        .resizable()
+                        .frame(height: 250)
+                    VStack(alignment: .leading) {
+                        Header()
+                        ListItem(
+                            icon: Image(systemName: "mappin"),
+                            title: "Localização",
+                            text: "Sed ut perspiciatis, unde omnis iste natus"
+                        )
+                        ListItem(
+                            icon: Image(systemName: "text.justifyleft"),
+                            title: "Descrição",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        )
+                        ListItem(
+                            icon: Image(systemName: "text.justifyleft"),
+                            title: "Cardápio",
+                            text: ". Lorem ipsum dolor sit amet\n. Consectetur adipiscing elit\n. Sed do eiusmod tempor incididunt\n. Ut labore et dolore magna aliqua"
+                        )
+                        ListItem(
+                            icon: Image(systemName: "info.circle"),
+                            title: "Informações Adicionais",
+                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+                        )
+                    }
+                    .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
+                    Spacer()
+                }
             }
-            .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
         }
     }
 }
@@ -27,13 +53,14 @@ struct Header: View {
             TitleAndPriceStack()
             OwnerAndDateStack()
         }
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 32, trailing: 0))
     }
 }
 
 struct TitleAndPriceStack: View {
     var body: some View {
         HStack {
-            Text("Porradinha")
+            Text("Esquenta WWDC")
                 .font(.title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             Spacer()
@@ -52,10 +79,26 @@ struct TitleAndPriceStack: View {
 struct OwnerAndDateStack: View {
     var body: some View {
         HStack(spacing: 8) {
-            Text("Uma república ai").font(.subheadline)
+            Text("Unidos do Academy").font(.subheadline)
             Text("03/05/2022").font(.subheadline)
         }
 
+    }
+}
+
+struct ListItem: View {
+    var icon: Image
+    var title: String
+    var text: String
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Label(
+                title: { Text(title).font(.title3).fontWeight(.bold) },
+                icon: { icon }
+            ).padding(EdgeInsets(top: 0, leading: 0, bottom: 4, trailing: 0))
+            Text(text).font(.body)
+        }.padding(EdgeInsets(top: 0, leading: 0, bottom: 24, trailing: 0))
     }
 }
 
