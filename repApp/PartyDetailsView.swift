@@ -8,35 +8,41 @@
 import SwiftUI
 
 struct PartyDetailsView: View {
+    var party: Party
+    
+    init(_ party: Party) {
+        self.party = party
+    }
+    
     var body: some View {
         ScrollView {
             ZStack {
                 Color(.sRGB, red: 247, green: 247, blue: 247, opacity: 1).ignoresSafeArea()
                 VStack(alignment: .center) {
-                    Image("party")
+                    Image(party.imageName)
                         .resizable()
                         .frame(height: 250)
                     VStack(alignment: .leading) {
-                        Header()
+                        Header(party)
                         ListItem(
                             icon: Image(systemName: "mappin"),
                             title: "Localização",
-                            text: "Sed ut perspiciatis, unde omnis iste natus"
+                            text: party.location
                         )
                         ListItem(
                             icon: Image(systemName: "text.justifyleft"),
                             title: "Descrição",
-                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            text: party.description
                         )
                         ListItem(
                             icon: Image(systemName: "text.justifyleft"),
                             title: "Cardápio",
-                            text: ". Lorem ipsum dolor sit amet\n. Consectetur adipiscing elit\n. Sed do eiusmod tempor incididunt\n. Ut labore et dolore magna aliqua"
+                            text: ". " + party.drinks.joined(separator: "\n. ")
                         )
                         ListItem(
                             icon: Image(systemName: "info.circle"),
                             title: "Informações Adicionais",
-                            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+                            text: party.additionalInformation
                         )
                     }
                     .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
@@ -48,24 +54,36 @@ struct PartyDetailsView: View {
 }
 
 struct Header: View {
+    var party: Party
+    
+    init(_ party: Party) {
+        self.party = party
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
-            TitleAndPriceStack()
-            OwnerAndDateStack()
+            TitleAndPriceStack(party)
+            OwnerAndDateStack(party)
         }
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 32, trailing: 0))
     }
 }
 
 struct TitleAndPriceStack: View {
+    var party: Party
+    
+    init(_ party: Party) {
+        self.party = party
+    }
+    
     var body: some View {
         HStack {
-            Text("Esquenta WWDC")
+            Text(party.name)
                 .font(.title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             Spacer()
             Button(action: {}, label: {
-                Text("R$29,99")
+                Text("R$" + String(party.cost))
                     .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
                     .background(Color.orange)
                     .foregroundColor(Color.white)
@@ -77,12 +95,17 @@ struct TitleAndPriceStack: View {
 }
 
 struct OwnerAndDateStack: View {
+    var party: Party
+    
+    init(_ party: Party) {
+        self.party = party
+    }
+    
     var body: some View {
         HStack(spacing: 8) {
-            Text("Unidos do Academy").font(.subheadline)
+            Text(party.owner).font(.subheadline)
             Text("03/05/2022").font(.subheadline)
         }
-
     }
 }
 
@@ -104,7 +127,7 @@ struct ListItem: View {
 
 struct PartyDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        PartyDetailsView()
+        PartyDetailsView(Party())
             .previewDevice("iPhone 12 Pro")
     }
 }
