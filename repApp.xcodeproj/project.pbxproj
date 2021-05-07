@@ -18,6 +18,7 @@
 		BCCD348D26417FA300C4BD18 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD348C26417FA300C4BD18 /* Party.swift */; };
 		BCCD3494264181F200C4BD18 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD3493264181F200C4BD18 /* ModelData.swift */; };
 		BCCD34A22641838D00C4BD18 /* partiesJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = BCCD34A12641838D00C4BD18 /* partiesJSON.json */; };
+		E8179998264070F5002F28DA /* PartyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8179997264070F5002F28DA /* PartyDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BCCD348C26417FA300C4BD18 /* Party.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		BCCD3493264181F200C4BD18 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BCCD34A12641838D00C4BD18 /* partiesJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = partiesJSON.json; sourceTree = "<group>"; };
+		E8179997264070F5002F28DA /* PartyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				BCCD3491264181BB00C4BD18 /* Views */,
 				BCCD345626403E7B00C4BD18 /* repAppApp.swift */,
 				BCCD345826403E7B00C4BD18 /* ContentView.swift */,
+				E8179997264070F5002F28DA /* PartyDetailsView.swift */,
 				BCCD345A26403E7C00C4BD18 /* Assets.xcassets */,
 				BCCD345F26403E7C00C4BD18 /* Info.plist */,
 				BCCD345C26403E7C00C4BD18 /* Preview Content */,
@@ -304,6 +307,7 @@
 				BCCD3494264181F200C4BD18 /* ModelData.swift in Sources */,
 				BCCD348D26417FA300C4BD18 /* Party.swift in Sources */,
 				BC3A227E2643A42C0075D27D /* PartyListItemView.swift in Sources */,
+				E8179998264070F5002F28DA /* PartyDetailsView.swift in Sources */,
 				BCCD345726403E7B00C4BD18 /* repAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
