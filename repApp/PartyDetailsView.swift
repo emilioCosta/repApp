@@ -58,19 +58,27 @@ struct Header: View {
 }
 
 struct TitleAndPriceStack: View {
+    
+    @State private var showModal = false
+    
     var body: some View {
         HStack {
             Text("Esquenta WWDC")
                 .font(.title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             Spacer()
-            Button(action: {}, label: {
+            Button(action: {
+                self.showModal.toggle()
+            }, label: {
                 Text("R$29,99")
                     .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
                     .background(Color.orange)
                     .foregroundColor(Color.white)
                     .font(.body)
                     .cornerRadius(15)
+            })
+            .sheet(isPresented: $showModal, content: {
+                ConfirmPaymentView(showModal: self.$showModal)
             })
         }
     }

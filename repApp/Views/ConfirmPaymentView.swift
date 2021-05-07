@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct ConfirmPaymentView: View {
+    
+    @Binding var showModal: Bool
+    
     var body: some View {
         VStack (alignment: .center) {
+            HStack {
+                Spacer()
+                Text("Confirmação de compra").font(.title3).bold()
+                Spacer()
+                Image(systemName: "xmark")
+                    .resizable()
+                    .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.orange)
+                    .onTapGesture {
+                        self.showModal.toggle()
+                    }
+            }
+            .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
             UserAndPartyDataList()
             Button(action: {}, label: {
                 Text("R$29,99")
@@ -28,6 +44,27 @@ struct ConfirmPaymentView: View {
         .padding(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
     }
 }
+
+//struct ViewHeader: View {
+//
+//    var showModal: Bool
+//
+//    var body: some View {
+//        HStack {
+//            Spacer()
+//            Text("Confirmação de compra").font(.title3).bold()
+//            Spacer()
+//            Image(systemName: "xmark")
+//                .resizable()
+//                .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                .foregroundColor(.orange)
+//                .onTapGesture {
+//                    self.showModal.toggle()
+//                }
+//        }
+//        .padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
+//    }
+//}
 
 struct Title: View {
     var body: some View {
@@ -76,7 +113,7 @@ struct Item: View {
 
 struct ConfirmPaymentView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmPaymentView()
+        ConfirmPaymentView(showModal: .constant(true))
             .previewDevice("iPhone 12 Pro")
     }
 }
