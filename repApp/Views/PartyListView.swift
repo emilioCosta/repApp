@@ -88,6 +88,7 @@ struct PartyListView: View {
                 )
             }
         }
+        .frame(alignment: .topTrailing)
     }
 }
 

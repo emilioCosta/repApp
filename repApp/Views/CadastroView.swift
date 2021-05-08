@@ -62,7 +62,7 @@ struct CadastroView: View {
 struct CadastroView_Previews: PreviewProvider {
     static var previews: some View {
         CadastroView()
-            .previewDevice("iPhone 12")
+            .previewDevice("iPhone 12 Pro")
     }
 }
 
