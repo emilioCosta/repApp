@@ -10,22 +10,9 @@ import SwiftUI
 
 struct PartyListItemView: View {
     var party: Party
-    var date: String
     
     init(_ party: Party) {
         self.party = party
-        let dateFormatterGet = DateFormatter()
-        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
-
-        let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "MMM dd,yyyy"
-
-        if let dateFormatted = dateFormatterGet.date(from: party.date.description) {
-            self.date = dateFormatterPrint.string(from: dateFormatted)
-        } else {
-            self.date = "Data não informada"
-        }
-        
     }
     
     @State
@@ -40,18 +27,11 @@ struct PartyListItemView: View {
             VStack(alignment: .leading){
                 Text(party.name)
                     .bold()
-                Text(date)
+                Text(party.dateFormatted)
                 Spacer()
                 Text("R$ " + String(party.cost))
             }
-            Spacer()
-            Image(systemName: "chevron.right")
-                .foregroundColor(Color(.sRGB, red: 1, green: 0.6, blue: 0.2, opacity: 1))
         }
-        .onTapGesture {
-//            DetailView(party)
-        }
-        .listRowBackground(Color(.sRGB, red: 0.97, green: 0.97, blue: 0.97, opacity: 1))
         .frame(height: 100)
     }
 }
@@ -72,13 +52,10 @@ struct Trapezoid: Shape {
    }
 }
 
-//struct PartyListItemView_Preview: PreviewProvider {
-//
-//    static var previews: some View {
-//        var party: Party = Party()
-//
-//        //party.date = Date(timeIntervalSinceNow: TimeInterval(8))
-//        PartyListItemView(party)
-//            .previewDevice("iPhone 12 Pro")
-//    }
-//}
+struct PartyListItemView_Preview: PreviewProvider {
+
+    static var previews: some View {
+        PartyListItemView(Party())
+            .previewDevice("iPhone 12 Pro")
+    }
+}

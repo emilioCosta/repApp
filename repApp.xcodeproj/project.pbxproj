@@ -13,7 +13,6 @@
 		BC2CF3F3264743C2009521A7 /* CampoSeguroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3F2264743C2009521A7 /* CampoSeguroView.swift */; };
 		BC3A227E2643A42C0075D27D /* PartyListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A227D2643A42C0075D27D /* PartyListItemView.swift */; };
 		BCCD345726403E7B00C4BD18 /* repAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD345626403E7B00C4BD18 /* repAppApp.swift */; };
-		BCCD345926403E7B00C4BD18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD345826403E7B00C4BD18 /* ContentView.swift */; };
 		BCCD345B26403E7C00C4BD18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCD345A26403E7C00C4BD18 /* Assets.xcassets */; };
 		BCCD345E26403E7C00C4BD18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCD345D26403E7C00C4BD18 /* Preview Assets.xcassets */; };
 		BCCD346926403E7D00C4BD18 /* repAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD346826403E7D00C4BD18 /* repAppTests.swift */; };
@@ -51,7 +50,6 @@
 		BC3A227D2643A42C0075D27D /* PartyListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyListItemView.swift; sourceTree = "<group>"; };
 		BCCD345326403E7B00C4BD18 /* repApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = repApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCD345626403E7B00C4BD18 /* repAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repAppApp.swift; sourceTree = "<group>"; };
-		BCCD345826403E7B00C4BD18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BCCD345A26403E7C00C4BD18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCCD345D26403E7C00C4BD18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCCD345F26403E7C00C4BD18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,8 +137,6 @@
 				BCCD3492264181CF00C4BD18 /* Models */,
 				BCCD3491264181BB00C4BD18 /* Views */,
 				BCCD345626403E7B00C4BD18 /* repAppApp.swift */,
-				BCCD345826403E7B00C4BD18 /* ContentView.swift */,
-				E8179997264070F5002F28DA /* PartyDetailsView.swift */,
 				BCCD345A26403E7C00C4BD18 /* Assets.xcassets */,
 				BCCD345F26403E7C00C4BD18 /* Info.plist */,
 				BCCD345C26403E7C00C4BD18 /* Preview Content */,
@@ -177,6 +173,7 @@
 		BCCD3491264181BB00C4BD18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8179997264070F5002F28DA /* PartyDetailsView.swift */,
 				BCCD348726417D1C00C4BD18 /* PartyListView.swift */,
 				BC3A227D2643A42C0075D27D /* PartyListItemView.swift */,
 				E8FA4FE02645CB2C00DE19B2 /* ConfirmPaymentView.swift */,
@@ -194,7 +191,8 @@
 			);
 			path = Models;
 			sourceTree = "<group>";
-		};/* End PBXGroup section */
+		};
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		BCCD345226403E7B00C4BD18 /* repApp */ = {
@@ -327,7 +325,6 @@
 				BCCD348826417D1C00C4BD18 /* PartyListView.swift in Sources */,
 				BC2CF3EC264742F2009521A7 /* CadastroView.swift in Sources */,
 				BC2CF3F3264743C2009521A7 /* CampoSeguroView.swift in Sources */,
-				BCCD345926403E7B00C4BD18 /* ContentView.swift in Sources */,
 				E8FA4FE12645CB2C00DE19B2 /* ConfirmPaymentView.swift in Sources */,
 				BCCD3494264181F200C4BD18 /* ModelData.swift in Sources */,
 				BCCD348D26417FA300C4BD18 /* Party.swift in Sources */,
@@ -502,7 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.repApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.repApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,7 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.academy.repApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.academy.repApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

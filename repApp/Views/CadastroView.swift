@@ -9,59 +9,64 @@ import SwiftUI
 
 struct CadastroView: View {
     @State private var checkBox: Bool = false
-    
+    @Binding var showModal: Bool
+    @Binding var hasBought: Bool
+
     var body: some View {
-        
-        ZStack {
-            
-            Color(red: 0.97, green: 0.97, blue: 0.97)
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                CampoInsercaoView(title: "Nome")
-                CampoInsercaoView(title: "E-mail")
-                CampoInsercaoView(title: "Confirmar E-mail")
-                CampoSeguroView(title: "senha")
-                CampoSeguroView(title: "confirmar senha")
+        NavigationView {
+            ZStack {
                 
-                HStack{
-                    Toggle(isOn: $checkBox){
-                        Text("Concordo com os")
-                        .font(.system(size: 14))
-                        Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("termos de uso")
-                        }
-                        .font(.system(size: 14))
-                        .foregroundColor(Color(red: 1.00, green: 0.60, blue: 0.20))
-                    }.toggleStyle(CheckBoxToggleStyle())
-                    Spacer()
-                }.padding(.horizontal)
-                Button(action: {
+                Color(red: 0.97, green: 0.97, blue: 0.97)
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    CampoInsercaoView(title: "Nome")
+                    CampoInsercaoView(title: "E-mail")
+                    CampoInsercaoView(title: "Confirmar E-mail")
+                    CampoSeguroView(title: "senha")
+                    CampoSeguroView(title: "confirmar senha")
                     
-                }) {
-                    Spacer()
-                    Text("Cadastrar")
-                        .fontWeight(.semibold)
-                        .foregroundColor(.white)
-                        .padding(.vertical, 10)
-                        .font(.system(size: 17))
-                        //.fontWeight(.bold)
-                    Spacer()
+                    HStack{
+                        Toggle(isOn: $checkBox){
+                            Text("Concordo com os")
+                            .font(.system(size: 14))
+                            Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
+                                Text("termos de uso")
+                            }
+                            .font(.system(size: 14))
+                            .foregroundColor(Color(red: 1.00, green: 0.60, blue: 0.20))
+                        }.toggleStyle(CheckBoxToggleStyle())
+                        Spacer()
+                    }.padding(.horizontal)
+                    Button(action: {
+                        self.hasBought.toggle()
+                        //self.showModal.toggle()
+                    }) {
+                        Spacer()
+                        Text("Cadastrar")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                            .padding(.vertical, 10)
+                            .font(.system(size: 17))
+                            //.fontWeight(.bold)
+                        Spacer()
+                    }
+                    .background(Color(red: 1.00, green: 0.60, blue: 0.20))
+                    .cornerRadius(25)
+                    .padding()
                 }
-                .background(Color(red: 1.00, green: 0.60, blue: 0.20))
-                .cornerRadius(25)
-                .padding()
-                
-                
             }
-            
+            .navigationBarTitle("Log In")
+            .navigationBarHidden(true)
         }
+        .navigationBarTitle("Log In")
+        .navigationBarHidden(true)
     }
 }
 
 struct CadastroView_Previews: PreviewProvider {
     static var previews: some View {
-        CadastroView()
+        CadastroView(showModal: .constant(true), hasBought: .constant(false))
             .previewDevice("iPhone 12 Pro")
     }
 }

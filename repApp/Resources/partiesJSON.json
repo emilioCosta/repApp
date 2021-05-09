@@ -1,5 +1,6 @@
 [
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 1",
         "cost":12.0,
         "dateRaw":"2021-05-11 17:00:00",
@@ -18,6 +19,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 2",
         "cost":12.0,
         "dateRaw":"2021-05-10 17:00:00",
@@ -36,6 +38,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 3",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -54,6 +57,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 4",
         "cost":12.0,
         "dateRaw":"2022-03-20 17:00:00",
@@ -72,6 +76,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 5",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -90,6 +95,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 6",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -108,6 +114,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 7",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -126,6 +133,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 8",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -144,6 +152,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 9",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -162,6 +171,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 10",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -180,6 +190,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 11",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
@@ -198,6 +209,7 @@
         }
     },
     {
+        "pix": "555.555.555-55",
         "name":"Festa Universitária 12",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
