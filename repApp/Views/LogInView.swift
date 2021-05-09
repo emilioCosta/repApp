@@ -60,7 +60,7 @@ struct LogInView: View {
 struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
         LogInView()
-            .previewDevice("iPhone 12")
+            .previewDevice("iPhone 12 Pro")
     }
 }
 
