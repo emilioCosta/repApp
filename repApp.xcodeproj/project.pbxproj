@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91726E122648AC5F00E92C4D /* QrCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91726E112648AC5F00E92C4D /* QrCodeView.swift */; };
 		BC2CF3EC264742F2009521A7 /* CadastroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3EB264742F2009521A7 /* CadastroView.swift */; };
 		BC2CF3EE26474313009521A7 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3ED26474313009521A7 /* LogInView.swift */; };
 		BC2CF3F12647436D009521A7 /* CampoInsercaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3F02647436D009521A7 /* CampoInsercaoView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91726E112648AC5F00E92C4D /* QrCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeView.swift; sourceTree = "<group>"; };
 		BC2CF3EB264742F2009521A7 /* CadastroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroView.swift; sourceTree = "<group>"; };
 		BC2CF3ED26474313009521A7 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		BC2CF3F02647436D009521A7 /* CampoInsercaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampoInsercaoView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				E8FA4FE02645CB2C00DE19B2 /* ConfirmPaymentView.swift */,
 				BC2CF3EB264742F2009521A7 /* CadastroView.swift */,
 				BC2CF3ED26474313009521A7 /* LogInView.swift */,
+				91726E112648AC5F00E92C4D /* QrCodeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				BCCD348D26417FA300C4BD18 /* Party.swift in Sources */,
 				BC2CF3F12647436D009521A7 /* CampoInsercaoView.swift in Sources */,
 				BC3A227E2643A42C0075D27D /* PartyListItemView.swift in Sources */,
+				91726E122648AC5F00E92C4D /* QrCodeView.swift in Sources */,
 				BC2CF3EE26474313009521A7 /* LogInView.swift in Sources */,
 				E8179998264070F5002F28DA /* PartyDetailsView.swift in Sources */,
 				BCCD345726403E7B00C4BD18 /* repAppApp.swift in Sources */,
