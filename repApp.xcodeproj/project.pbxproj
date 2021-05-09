@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC2CF3EC264742F2009521A7 /* CadastroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3EB264742F2009521A7 /* CadastroView.swift */; };
+		BC2CF3EE26474313009521A7 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3ED26474313009521A7 /* LogInView.swift */; };
+		BC2CF3F12647436D009521A7 /* CampoInsercaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3F02647436D009521A7 /* CampoInsercaoView.swift */; };
+		BC2CF3F3264743C2009521A7 /* CampoSeguroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2CF3F2264743C2009521A7 /* CampoSeguroView.swift */; };
 		BC3A227E2643A42C0075D27D /* PartyListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3A227D2643A42C0075D27D /* PartyListItemView.swift */; };
 		BCCD345726403E7B00C4BD18 /* repAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD345626403E7B00C4BD18 /* repAppApp.swift */; };
 		BCCD345926403E7B00C4BD18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD345826403E7B00C4BD18 /* ContentView.swift */; };
@@ -19,6 +23,7 @@
 		BCCD3494264181F200C4BD18 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCD3493264181F200C4BD18 /* ModelData.swift */; };
 		BCCD34A22641838D00C4BD18 /* partiesJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = BCCD34A12641838D00C4BD18 /* partiesJSON.json */; };
 		E8179998264070F5002F28DA /* PartyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8179997264070F5002F28DA /* PartyDetailsView.swift */; };
+		E8FA4FE12645CB2C00DE19B2 /* ConfirmPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA4FE02645CB2C00DE19B2 /* ConfirmPaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC2CF3EB264742F2009521A7 /* CadastroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroView.swift; sourceTree = "<group>"; };
+		BC2CF3ED26474313009521A7 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		BC2CF3F02647436D009521A7 /* CampoInsercaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampoInsercaoView.swift; sourceTree = "<group>"; };
+		BC2CF3F2264743C2009521A7 /* CampoSeguroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampoSeguroView.swift; sourceTree = "<group>"; };
 		BC3A227D2643A42C0075D27D /* PartyListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyListItemView.swift; sourceTree = "<group>"; };
 		BCCD345326403E7B00C4BD18 /* repApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = repApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCD345626403E7B00C4BD18 /* repAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repAppApp.swift; sourceTree = "<group>"; };
@@ -57,6 +66,7 @@
 		BCCD3493264181F200C4BD18 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		BCCD34A12641838D00C4BD18 /* partiesJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = partiesJSON.json; sourceTree = "<group>"; };
 		E8179997264070F5002F28DA /* PartyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyDetailsView.swift; sourceTree = "<group>"; };
+		E8FA4FE02645CB2C00DE19B2 /* ConfirmPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC2CF3EF26474335009521A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC2CF3F02647436D009521A7 /* CampoInsercaoView.swift */,
+				BC2CF3F2264743C2009521A7 /* CampoSeguroView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		BC6CF7B0264559CE003C5345 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +134,7 @@
 		BCCD345526403E7B00C4BD18 /* repApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC2CF3EF26474335009521A7 /* Components */,
 				BC6CF7B0264559CE003C5345 /* Resources */,
 				BCCD3492264181CF00C4BD18 /* Models */,
 				BCCD3491264181BB00C4BD18 /* Views */,
@@ -159,6 +179,9 @@
 			children = (
 				BCCD348726417D1C00C4BD18 /* PartyListView.swift */,
 				BC3A227D2643A42C0075D27D /* PartyListItemView.swift */,
+				E8FA4FE02645CB2C00DE19B2 /* ConfirmPaymentView.swift */,
+				BC2CF3EB264742F2009521A7 /* CadastroView.swift */,
+				BC2CF3ED26474313009521A7 /* LogInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,8 +194,7 @@
 			);
 			path = Models;
 			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
+		};/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		BCCD345226403E7B00C4BD18 /* repApp */ = {
@@ -303,10 +325,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCD348826417D1C00C4BD18 /* PartyListView.swift in Sources */,
+				BC2CF3EC264742F2009521A7 /* CadastroView.swift in Sources */,
+				BC2CF3F3264743C2009521A7 /* CampoSeguroView.swift in Sources */,
 				BCCD345926403E7B00C4BD18 /* ContentView.swift in Sources */,
+				E8FA4FE12645CB2C00DE19B2 /* ConfirmPaymentView.swift in Sources */,
 				BCCD3494264181F200C4BD18 /* ModelData.swift in Sources */,
 				BCCD348D26417FA300C4BD18 /* Party.swift in Sources */,
+				BC2CF3F12647436D009521A7 /* CampoInsercaoView.swift in Sources */,
 				BC3A227E2643A42C0075D27D /* PartyListItemView.swift in Sources */,
+				BC2CF3EE26474313009521A7 /* LogInView.swift in Sources */,
 				E8179998264070F5002F28DA /* PartyDetailsView.swift in Sources */,
 				BCCD345726403E7B00C4BD18 /* repAppApp.swift in Sources */,
 			);

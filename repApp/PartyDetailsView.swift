@@ -70,11 +70,16 @@ struct Header: View {
 }
 
 struct TitleAndPriceStack: View {
+<<<<<<< HEAD
     var party: Party
     
     init(_ party: Party) {
         self.party = party
     }
+=======
+    
+    @State private var showModal = false
+>>>>>>> main
     
     var body: some View {
         HStack {
@@ -82,13 +87,23 @@ struct TitleAndPriceStack: View {
                 .font(.title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             Spacer()
+<<<<<<< HEAD
             Button(action: {}, label: {
                 Text("R$" + String(party.cost))
+=======
+            Button(action: {
+                self.showModal.toggle()
+            }, label: {
+                Text("R$29,99")
+>>>>>>> main
                     .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
                     .background(Color.orange)
                     .foregroundColor(Color.white)
                     .font(.body)
                     .cornerRadius(15)
+            })
+            .sheet(isPresented: $showModal, content: {
+                ConfirmPaymentView(showModal: self.$showModal)
             })
         }
     }
