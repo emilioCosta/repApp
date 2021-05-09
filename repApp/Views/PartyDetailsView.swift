@@ -23,7 +23,7 @@ struct PartyDetailsView: View {
                         .resizable()
                         .frame(height: 250)
                     VStack(alignment: .leading) {
-                        Header(party)
+                        Header(party: party)
                         ListItem(
                             icon: Image(systemName: "mappin"),
                             title: "Localização",
@@ -56,13 +56,9 @@ struct PartyDetailsView: View {
 struct Header: View {
     var party: Party
     
-    init(_ party: Party) {
-        self.party = party
-    }
-    
     var body: some View {
         VStack(alignment: .leading) {
-            TitleAndPriceStack(party)
+            TitleAndPriceStack(party: party)
             OwnerAndDateStack(party)
         }
         .padding(EdgeInsets(top: 0, leading: 0, bottom: 32, trailing: 0))
@@ -70,32 +66,20 @@ struct Header: View {
 }
 
 struct TitleAndPriceStack: View {
-<<<<<<< HEAD
     var party: Party
-    
-    init(_ party: Party) {
-        self.party = party
-    }
-=======
-    
     @State private var showModal = false
->>>>>>> main
-    
+    @State private var hasBought = false
+
     var body: some View {
         HStack {
             Text(party.name)
                 .font(.title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             Spacer()
-<<<<<<< HEAD
-            Button(action: {}, label: {
-                Text("R$" + String(party.cost))
-=======
             Button(action: {
                 self.showModal.toggle()
             }, label: {
-                Text("R$29,99")
->>>>>>> main
+                Text(hasBought ? "Ticket" : "R$" + String(party.cost))
                     .padding(EdgeInsets(top: 12, leading: 16, bottom: 12, trailing: 16))
                     .background(Color.orange)
                     .foregroundColor(Color.white)
@@ -103,7 +87,11 @@ struct TitleAndPriceStack: View {
                     .cornerRadius(15)
             })
             .sheet(isPresented: $showModal, content: {
-                ConfirmPaymentView(showModal: self.$showModal)
+                if hasBought {
+                    Text("Compra efetivada!!")
+                } else {
+                    ConfirmPaymentView(showModal: self.$showModal, hasBought: $hasBought, party: party)
+                }
             })
         }
     }
@@ -119,7 +107,7 @@ struct OwnerAndDateStack: View {
     var body: some View {
         HStack(spacing: 8) {
             Text(party.owner).font(.subheadline)
-            Text("03/05/2022").font(.subheadline)
+            Text(party.dateFormatted).font(.subheadline)
         }
     }
 }

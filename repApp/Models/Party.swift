@@ -21,11 +21,13 @@ struct Party: Hashable, Decodable, Identifiable {
         drinks = [ "Corote", "Breja"]
         owner = "Fulano"
         imageName = "party"
+        pix = "555.555.555-55"
     }
     
     var id: UUID {
         UUID()
     }
+    var pix: String
     var name: String
     var cost: Double
     private var dateRaw: String
@@ -34,7 +36,6 @@ struct Party: Hashable, Decodable, Identifiable {
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         dateFormatter.timeZone = TimeZone.current
         dateFormatter.locale = Locale.current
-        print(dateFormatter.date(from: dateRaw)!)
         return dateFormatter.date(from: dateRaw)!
     }
     var dateFormatted: String {
@@ -42,9 +43,6 @@ struct Party: Hashable, Decodable, Identifiable {
         dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
         let dateFormatterPrint = DateFormatter()
         dateFormatterPrint.dateFormat = "dd/MM/yyyy"
-        
-        print(dateFormatterGet.date(from: date.description))
-
         if let dateFormatted = dateFormatterGet.date(from: date.description) {
             return dateFormatterPrint.string(from: dateFormatted)
         } else {
