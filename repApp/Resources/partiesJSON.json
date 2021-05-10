@@ -1,7 +1,7 @@
 [
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 1",
+        "name":"Festa em Rep 1",
         "cost":12.0,
         "dateRaw":"2021-05-11 17:00:00",
         "location":"IFCH",
@@ -20,7 +20,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 2",
+        "name":"Festa em Rep 2",
         "cost":12.0,
         "dateRaw":"2021-05-10 17:00:00",
         "location":"IFCH",
@@ -39,7 +39,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 3",
+        "name":"Festa em Rep 3",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -58,7 +58,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 4",
+        "name":"Festa em Rep 4",
         "cost":12.0,
         "dateRaw":"2022-03-20 17:00:00",
         "location":"IFCH",
@@ -77,7 +77,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 5",
+        "name":"Festa em Rep 5",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -96,7 +96,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 6",
+        "name":"Festa em Rep 6",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -115,7 +115,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 7",
+        "name":"Festa em Rep 7",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -134,7 +134,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 8",
+        "name":"Festa em Rep 8",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -153,7 +153,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 9",
+        "name":"Festa em Rep 9",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -172,7 +172,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 10",
+        "name":"Festa em Rep 10",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -191,7 +191,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 11",
+        "name":"Festa em Rep 11",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",
@@ -210,7 +210,7 @@
     },
     {
         "pix": "555.555.555-55",
-        "name":"Festa Universitária 12",
+        "name":"Festa em Rep 12",
         "cost":12.0,
         "dateRaw":"2022-03-12 17:00:00",
         "location":"IFCH",

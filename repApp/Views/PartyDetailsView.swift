@@ -88,7 +88,7 @@ struct TitleAndPriceStack: View {
             })
             .sheet(isPresented: $showModal, content: {
                 if hasBought {
-                    Text("Compra efetivada!!")
+                    QrCodeView(showModal: self.$showModal)
                 } else {
                     ConfirmPaymentView(showModal: self.$showModal, hasBought: $hasBought, party: party)
                 }

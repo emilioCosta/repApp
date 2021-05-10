@@ -31,7 +31,6 @@ struct LogInView: View {
                     CampoSeguroView(title: "Senha")
                     Button(action: {
                         self.hasBought.toggle()
-                        //self.showModal.toggle()
                     }) {
                         Spacer()
                         Text("Entrar")

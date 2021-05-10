@@ -91,6 +91,7 @@ struct PartyListView: View {
                     )
                 }
             }
+            .foregroundColor(.black)
             .navigationBarTitle("Festas")
             .navigationBarHidden(true)
         }

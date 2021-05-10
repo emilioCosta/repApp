@@ -30,7 +30,7 @@
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIImageName</key>
-		<string>party</string>
+		<string>logo_stroke</string>
 	</dict>
 	<key>CFBundleDisplayName</key>
 	<string></string>

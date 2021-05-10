@@ -39,8 +39,9 @@ struct CadastroView: View {
                         Spacer()
                     }.padding(.horizontal)
                     Button(action: {
-                        self.hasBought.toggle()
-                        //self.showModal.toggle()
+                        if checkBox {
+                            self.hasBought.toggle()
+                        }
                     }) {
                         Spacer()
                         Text("Cadastrar")
@@ -51,7 +52,7 @@ struct CadastroView: View {
                             //.fontWeight(.bold)
                         Spacer()
                     }
-                    .background(Color(red: 1.00, green: 0.60, blue: 0.20))
+                    .background(checkBox ? Color(red: 1.00, green: 0.60, blue: 0.20) : .gray)
                     .cornerRadius(25)
                     .padding()
                 }
